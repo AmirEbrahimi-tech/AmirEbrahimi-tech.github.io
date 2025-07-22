@@ -1,15 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Amir Ebrahimi – Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Reset & basic styling */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #1e3c72, #2a5298);
+      color: #f4f4f4;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      line-height: 1.6;
+    }
+
+    header {
+      background: rgba(0,0,0,0.25);
+      padding: 1rem 2rem;
+      text-align: center;
+      border-bottom: 1px solid rgba(255,255,255,0.2);
+    }
+    header h1 {
+      font-size: 2rem;
+      margin-bottom: 0.3em;
+    }
+    header p {
+      font-size: 1.1rem;
+      opacity: 0.9;
+    }
+
+    nav {
+      margin-top: 1rem;
+    }
+    nav a {
+      color: #f4f4f4;
+      text-decoration: none;
+      margin: 0 1rem;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+    nav a:hover {
+      color: #ffe082;
+    }
+
+    main {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    .hero {
+      max-width: 800px;
+    }
+    .hero h2 {
+      font-size: 2.4rem;
+      margin-bottom: 1rem;
+      color: #ffe082;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+      opacity: 0.95;
+    }
+    .hero a {
+      display: inline-block;
+      background: #ffe082;
+      color: #1e3c72;
+      font-weight: bold;
+      padding: 0.8rem 1.5rem;
+      border-radius: 50px;
+      text-decoration: none;
+      font-size: 1rem;
+      transition: background 0.3s ease, transform 0.2s ease;
+    }
+    .hero a:hover {
+      background: #ffca28;
+      transform: translateY(-2px);
+    }
+
+    footer {
+      text-align: center;
+      font-size: 0.9rem;
+      padding: 1rem;
+      background: rgba(0,0,0,0.25);
+      border-top: 1px solid rgba(255,255,255,0.2);
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.6rem;
+      }
+      .hero h2 {
+        font-size: 1.8rem;
+      }
+    }
+  </style>
 </head>
 <body>
   <header>
-    <h1>Hi, I'm Amir 👋</h1>
-    <p>Welcome to my personal website hosted on GitHub Pages!</p>
+    <h1>Amir Ebrahimi</h1>
+    <p>Tech enthusiast · Future developer · Building my portfolio</p>
     <nav>
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
@@ -17,14 +117,21 @@
       <a href="contact.html">Contact</a>
     </nav>
   </header>
+
   <main>
-    <section>
-      <h2>🚀 Work in Progress</h2>
-      <p>This is my starter portfolio. I’ll add more soon!</p>
-    </section>
+    <div class="hero">
+      <h2>Welcome to my website! 👋</h2>
+      <p>
+        I’m learning Git, GitHub, and web development to build a strong
+        professional portfolio.  
+        Stay tuned for my future projects and updates.
+      </p>
+      <a href="https://github.com/AmirEbrahimi-tech" target="_blank">🌐 Visit my GitHub</a>
+    </div>
   </main>
+
   <footer>
-    <p>© 2025 Amir Ebrahimi</p>
+    © 2025 Amir Ebrahimi · Built with ❤️ on GitHub Pages
   </footer>
 </body>
 </html>
